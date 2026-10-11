@@ -1,0 +1,16 @@
+# Local environments, model assets, recordings, logs, and generated applications.
+.venv/
+.runtime/
+.local/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.DS_Store
+native/build/
+.env
+.env.*
+
+# Historical research stays local; the shipped app has no dependency on it.
+experiments/
+docs/research/
+listening-room*.html

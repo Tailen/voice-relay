@@ -1,0 +1,26 @@
+name: Checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen
+      - name: Fetch pinned source and test metadata (no model weights)
+        run: .venv/bin/python scripts/setup_runtime.py --code-only
+      - run: bash scripts/test.sh
+      - name: Compile native application
+        run: >-
+          xcrun clang++ -std=c++17 -O2 -Wall -Wextra -Werror
+          -Wno-unused-function -Wno-unused-parameter -fobjc-arc -mmacosx-version-min=14.2
+          -framework AppKit -framework CoreAudio -framework AudioToolbox -framework UniformTypeIdentifiers
+          native/app/Main.mm -o native/build/VoiceRelay
+      - run: bash scripts/build_test_player.sh

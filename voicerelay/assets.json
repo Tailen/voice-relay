@@ -1,0 +1,63 @@
+{
+  "upstream": {
+    "revision": "49df8c591eafc48b096e466d96f9839f9c0dd739",
+    "url": "https://codeload.github.com/Jerrister/X-VC/tar.gz/49df8c591eafc48b096e466d96f9839f9c0dd739",
+    "sha256": "e978143bb15307ce3f01d150b4a78c327dd859eb8c633bf06f611d0ee6a4d28b"
+  },
+  "assets": [
+    {
+      "file": "models/xvc.pt",
+      "url": "https://huggingface.co/chenxie95/X-VC/resolve/9e54747d8c4d1ef544b903e2300a4ba040dcc126/xvc.pt",
+      "bytes": 5007756915,
+      "sha256": "1ba0ca3187d2a6753a1529db18c5490e5cb20c8874dc067b92935ff39cfed687"
+    },
+    {
+      "file": "models/tokenizer/model.safetensors",
+      "url": "https://huggingface.co/zai-org/glm-4-voice-tokenizer/resolve/a5f2404e63c84e92f5238908e1706316324ebafa/model.safetensors",
+      "bytes": 1458374480,
+      "sha256": "2800bd503f52b51e45f0c53cfd5c31dcfe8ef7f13d22b396aa3d53e0280dd1e4"
+    },
+    {
+      "file": "models/tokenizer/config.json",
+      "url": "https://huggingface.co/zai-org/glm-4-voice-tokenizer/resolve/a5f2404e63c84e92f5238908e1706316324ebafa/config.json",
+      "bytes": 1746,
+      "sha256": "5a5181fcc293ced0a1e7455f6e3503ce4e8be9229922ea34aeb785f62720c0aa"
+    },
+    {
+      "file": "models/tokenizer/preprocessor_config.json",
+      "url": "https://huggingface.co/zai-org/glm-4-voice-tokenizer/resolve/a5f2404e63c84e92f5238908e1706316324ebafa/preprocessor_config.json",
+      "bytes": 340,
+      "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711"
+    },
+    {
+      "file": "models/tokenizer/LICENSE",
+      "url": "https://huggingface.co/zai-org/glm-4-voice-tokenizer/resolve/a5f2404e63c84e92f5238908e1706316324ebafa/LICENSE",
+      "bytes": 6490,
+      "sha256": "3b15c118c6ee08ae5e6e29e3ed5c9dc2ff20ac30ab0fc51e27c08e606c7e15fe"
+    },
+    {
+      "file": "models/tokenizer/README.md",
+      "url": "https://huggingface.co/zai-org/glm-4-voice-tokenizer/resolve/a5f2404e63c84e92f5238908e1706316324ebafa/README.md",
+      "bytes": 1296,
+      "sha256": "2c3e39555afa1464a05a7361a7d4ce86fb6949779e36d38c38bdb68059e3c9bb"
+    },
+    {
+      "file": "models/speaker/README.md",
+      "url": "https://modelscope.cn/api/v1/models/iic/speech_eres2net_sv_en_voxceleb_16k/repo?Revision=fc341bb386377fe12a6ef8f1a67deeceb3f24483&FilePath=README.md",
+      "bytes": 4564,
+      "sha256": "65bbb74807fdc243f1adff261bf33ce8f1e36cd6c533f71b755c8d7249856f61"
+    },
+    {
+      "file": "models/speaker/configuration.json",
+      "url": "https://modelscope.cn/api/v1/models/iic/speech_eres2net_sv_en_voxceleb_16k/repo?Revision=4456f625128f3b174b79df1ba4082cac390db244&FilePath=configuration.json",
+      "bytes": 405,
+      "sha256": "bbd0c639f5c73325ad9f080d9f8866b613f739546216dc090eabe65ed0bbdd18"
+    },
+    {
+      "file": "models/speaker/pretrained_eres2net.ckpt",
+      "url": "https://modelscope.cn/api/v1/models/iic/speech_eres2net_sv_en_voxceleb_16k/repo?Revision=d218897d786c80ad5c936d8d8aae0564ec9097a8&FilePath=pretrained_eres2net.ckpt",
+      "bytes": 26725867,
+      "sha256": "d8941f5952e31820173c8854562cb6d7897aaa58cd65c18f30d5a2e52d30847d"
+    }
+  ]
+}
